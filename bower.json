@@ -1,0 +1,20 @@
+{
+  "name": "error demonstration",
+  "description": "",
+  "homepage": "",
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "paper-elements": "Polymer/paper-elements#master",
+    "core-pages": "Polymer/core-pages#master",
+    "paper-ripple": "Polymer/paper-ripple#master",
+    "chart-elements": "robdodson/chart-elements#master"
+  },
+  "resolutions": {
+    "polymer": "master",
+    "platform": "master",
+    "core-component-page": "master"
+  }
+}
