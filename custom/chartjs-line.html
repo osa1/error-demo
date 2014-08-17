@@ -36,7 +36,8 @@
 
         this.data = { labels: this.labels, datasets: this.datasets };
         this.ctx = this.$.canvas.getContext('2d');
-        var ch = new Chart(this.ctx).Line(this.data, { maintainAspectRatio: false, animation: false });
+        this.chart = new Chart(this.ctx).Line(this.data, { maintainAspectRatio: false, animation: false });
+        var ch = this.chart; // to be used in callbacks
         var redraw = false;
         this.$.resize.addEventListener('x-resized', function() {
           if(!redraw) {
@@ -60,7 +61,7 @@
         "70,191,189",
         "148,159,177",
         "77,83,96"
-      ]
+      ],
     });
   </script>
 </polymer-element>
